@@ -44,6 +44,6 @@ int main(){
     for(int i = 1;i<=k;i++){
         cout<<persons[i].id<<" ";
     }
-
+    return 0;
 }
 

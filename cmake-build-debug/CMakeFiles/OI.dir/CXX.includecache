@@ -6,11 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/home/dhy/Develop/OI/P1583.cpp
+/home/dhy/Develop/OI/P1309.cpp
 iostream
 -
 algorithm
--
-vector
 -
 

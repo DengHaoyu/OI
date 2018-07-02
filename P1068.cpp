@@ -35,4 +35,5 @@ int main(){
     for(int i = 0;i<count;i++){
         cout<<vols[i].id<<" "<<vols[i].score<<endl;
     }
+    return 0;
 }
