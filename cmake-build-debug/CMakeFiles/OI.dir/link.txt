@@ -1,1 +1,1 @@
-/usr/bin/c++  -g   CMakeFiles/OI.dir/P1309.cpp.o  -o OI 
+/usr/bin/c++  -g   CMakeFiles/OI.dir/P1071.cpp.o  -o OI 
