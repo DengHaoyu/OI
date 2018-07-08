@@ -6,11 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/home/dhy/Develop/OI/P1071.cpp
+/home/dhy/Develop/OI/P1208.cpp
 iostream
 -
-string
--
-map
+algorithm
 -
 
