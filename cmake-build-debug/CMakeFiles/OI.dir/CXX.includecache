@@ -6,9 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/dhy/Develop/OI/P1092.cpp
+/home/dhy/Develop/OI/P1045.cpp
 iostream
 -
-stdlib.h
+cmath
+-
+cstring
 -
 

@@ -6,71 +6,62 @@
 #include <iostream>
 #include<stdlib.h>
 using namespace std;
-int num_map[27];
-bool used[14];
-int jjjj;
+int num_map[27]{-1};
+int addend[27];
+int sum[28];
+int command[27];
 int N;
-string addend,summend,ans;
+int *index[3] = {addend,command,sum};
+int lengthOfSum;
+bool num_used[27];
+void print(){
+    for(int i = 0;i<N;i++)
+        cout<<num_map[i]<<' ';
+    cout<<endl;
+}
 bool judge(){
-    string add,summ,an;
-    for(int i = 0;i<N;i++){
-        add.push_back(num_map[addend[i]-'A']+'0');
-        summ.push_back(num_map[summend[i]-'A']+'0');
-        an.push_back(num_map[ans[i]-'A']+'0');
-    }
     int over = 0;
-    string res;
-    for(int i = N-1;i>=0;i--){
-        int a,b;
-        a = add[i] - '0';
-        b = summ[i] - '0';
-        if(a+b+over>=N){
-            res.insert(0,1,'0'+a+b+over-N);
-            over = (a+b+over)/N;
-        }else{
-            res.insert(0,1,'0'+a+b+over);
-            over = 0;
+    int j = lengthOfSum;
+    for(int i = N;i>=0;i++){
+        int ts = num_map[addend[i]]+num_map[command[i]];
+        if(ts>=N){
+            over = ts/N;
+            ts-=ts%N;
+        }
+        if(ts!=sum[j]){
+            return false;
         }
     }
-    if (over != 0){
-        res.insert(0,1,'0'+over);
-    }
-    if(res==an){
-        return true;
-    }else{
+    if(j!=0&&over!=sum[0]){
         return false;
     }
+    return true;
 }
-void dfs(int ind){
-    if(ind >= N){
-        if(judge()){
-            for(int i = 0;i<N;i++){
-                cout<<num_map[i]<<" ";
-            }
-            cout<<endl;
-            exit(0);
-        }else{
-            return ;
-        }
+void dfs(int ind,int pos){
+    if(ind==2&&pos==0judge()){
+        print();
+        exit(0);
     }
-    for(int i = 0 ;i < N ; i++){
-        if(!used[i]){
-            used[i] = true;
-            num_map[ind] = i;
-            dfs(ind+1);
-            used[i] = false;
-        }
+    if(pos==0){
+        dfs(ind+1,pos);
+    }else{
+
     }
+
 }
 int main(){
-    for(int i = 0;i<=26;i++){
-        num_map[i] = 0;
-    }
-    for(int i = 0;i<=13;i++){
-        used[i] = false;
-    }
-    cin>>N>>addend>>summend>>ans;
-    dfs(0);
+    string str;
+    cin>>N;
+    cin>>str;
+    for(int i = 0;i<N;i++)
+        addend[i] = str[i]-'A';
+    cin>>str;
+    for(int i = 0;i<N;i++)
+        command[i] = str[i]-'A';
+    cin>>str;
+    lengthOfSum = str.size();
+    for(int i = 0;i<str.size();i++)
+        sum[i] = str[i]-'A';
     return 0;
 }
 
