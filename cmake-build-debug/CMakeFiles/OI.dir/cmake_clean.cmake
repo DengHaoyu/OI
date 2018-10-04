@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/OI.dir/P1045.cpp.o"
+  "CMakeFiles/OI.dir/U42572.cpp.o"
   "OI.pdb"
   "OI"
 )

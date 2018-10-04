@@ -3,4 +3,4 @@ project(OI)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(OI P1045.cpp)
+add_executable(OI U42572.cpp)
