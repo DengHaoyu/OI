@@ -6,7 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/home/dhy/Develop/OI/U41571.cpp
+/home/dhy/Develop/OI/P2483.cpp
+cstdio
+-
+cstring
+-
+queue
+-
+string
+-
 iostream
 -
 
