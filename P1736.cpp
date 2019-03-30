@@ -2,46 +2,51 @@
 // Created by dhy on 19-1-5.
 //
 #include <iostream>
+#include <deque>
 #include <cstring>
+#include <cmath>
+#include <cstdlib>
 using namespace std;
-const int MAXN = 2510;
-int map[MAXN][MAXN];
-int dp[MAXN][MAXN];
-int row[MAXN][MAXN];
-int col[MAXN][MAXN];
-int n,m;
-int main(){
-    int n,m;
-    ios::sync_with_stdio(false);
+const int MAXN = 500010;
+int x[MAXN];
+int s[MAXN];
+int n,d,k;
+int dp[MAXN];
+bool work(int g){
+    int maxx = d+g;
+    int minn = d-g<=0?1:d-g;
+    deque<int> q;
+    memset(dp,-127, sizeof(dp));
     int ans = 0;
-    cin>>n>>m;
-    for(int i = 1;i<=n;i++) {
-        for (int j = 1; j <= m; j++){
-            cin>>map[i][j];
-            if(map[i][j]==0){
-                col[i][j] = col[i-1][j]+1;
-                row[i][j] = row[i][j-1]+1;
-            }else{
-                dp[i][j] = min(dp[i-1][j-1],min(row[i][j-1],col[i-1][j]))+1;
-
+    dp[0] = 0;
+    for(int i = 1;i<=n;i++){
+        for(int j = i-1;j>=0;j--){
+            if(x[i]-x[j]>maxx)break;
+            if(x[j]+minn<=x[i]&&x[j]+maxx>=x[i]){
+                dp[i] = max(dp[i], dp[j] + s[i]);
+                ans = max(ans, dp[i]);
+                if (ans >= k)return true;
             }
-            ans = max(ans,dp[i][j]);
         }
     }
-    memset(dp,0, sizeof(dp));
-    memset(row,0, sizeof(row));
-    memset(col,0, sizeof(col));
-    for(int i = 1;i<=n;i++)
-        for(int j = m;j>=1;j--){
-            if(map[i][j]==0){
-                col[i][j] = col[i-1][j]+1;
-                row[i][j] = row[i][j+1]+1;
-            }else{
-                dp[i][j] = min(dp[i-1][j+1],min(row[i][j+1],col[i-1][j]))+1;
-            }
-                ans = max(ans,dp[i][j]);
-        }
-        cout<<ans;
-
+    return false;
+}
+int main(){
+//    cin>>n>>d>>k;
+//    for(int i = 1;i<=n;i++){
+//        cin>>x[i]>>s[i];
+//    }
+    srand(time(0));
+//    int l = 0,r = x[n];
+//    while(l<r){
+//        int val = l+(rand()%(r-l));
+//        if(work(val))r = val;
+//        else l = val+1;
+//    }
+//    cout<<l;
     return 0;
 };
+ Created by dhy on 19-1-12.
+
+
+ Created by dhy on 19-1-12.

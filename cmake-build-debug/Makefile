@@ -123,32 +123,32 @@ OI/fast:
 	$(MAKE) -f CMakeFiles/OI.dir/build.make CMakeFiles/OI.dir/build
 .PHONY : OI/fast
 
-P1736.o: P1736.cpp.o
+poj1830.o: poj1830.cpp.o
 
-.PHONY : P1736.o
+.PHONY : poj1830.o
 
 # target to build an object file
-P1736.cpp.o:
-	$(MAKE) -f CMakeFiles/OI.dir/build.make CMakeFiles/OI.dir/P1736.cpp.o
-.PHONY : P1736.cpp.o
+poj1830.cpp.o:
+	$(MAKE) -f CMakeFiles/OI.dir/build.make CMakeFiles/OI.dir/poj1830.cpp.o
+.PHONY : poj1830.cpp.o
 
-P1736.i: P1736.cpp.i
+poj1830.i: poj1830.cpp.i
 
-.PHONY : P1736.i
+.PHONY : poj1830.i
 
 # target to preprocess a source file
-P1736.cpp.i:
-	$(MAKE) -f CMakeFiles/OI.dir/build.make CMakeFiles/OI.dir/P1736.cpp.i
-.PHONY : P1736.cpp.i
+poj1830.cpp.i:
+	$(MAKE) -f CMakeFiles/OI.dir/build.make CMakeFiles/OI.dir/poj1830.cpp.i
+.PHONY : poj1830.cpp.i
 
-P1736.s: P1736.cpp.s
+poj1830.s: poj1830.cpp.s
 
-.PHONY : P1736.s
+.PHONY : poj1830.s
 
 # target to generate assembly for a file
-P1736.cpp.s:
-	$(MAKE) -f CMakeFiles/OI.dir/build.make CMakeFiles/OI.dir/P1736.cpp.s
-.PHONY : P1736.cpp.s
+poj1830.cpp.s:
+	$(MAKE) -f CMakeFiles/OI.dir/build.make CMakeFiles/OI.dir/poj1830.cpp.s
+.PHONY : poj1830.cpp.s
 
 # Help Target
 help:
@@ -159,9 +159,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... OI"
-	@echo "... P1736.o"
-	@echo "... P1736.i"
-	@echo "... P1736.s"
+	@echo "... poj1830.o"
+	@echo "... poj1830.i"
+	@echo "... poj1830.s"
 .PHONY : help
 
 

@@ -57,27 +57,27 @@ include CMakeFiles/OI.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/OI.dir/flags.make
 
-CMakeFiles/OI.dir/P1736.cpp.o: CMakeFiles/OI.dir/flags.make
-CMakeFiles/OI.dir/P1736.cpp.o: ../P1736.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dhy/Develop/OI/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/OI.dir/P1736.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/OI.dir/P1736.cpp.o -c /home/dhy/Develop/OI/P1736.cpp
+CMakeFiles/OI.dir/poj1830.cpp.o: CMakeFiles/OI.dir/flags.make
+CMakeFiles/OI.dir/poj1830.cpp.o: ../poj1830.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dhy/Develop/OI/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/OI.dir/poj1830.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/OI.dir/poj1830.cpp.o -c /home/dhy/Develop/OI/poj1830.cpp
 
-CMakeFiles/OI.dir/P1736.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OI.dir/P1736.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dhy/Develop/OI/P1736.cpp > CMakeFiles/OI.dir/P1736.cpp.i
+CMakeFiles/OI.dir/poj1830.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OI.dir/poj1830.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dhy/Develop/OI/poj1830.cpp > CMakeFiles/OI.dir/poj1830.cpp.i
 
-CMakeFiles/OI.dir/P1736.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OI.dir/P1736.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dhy/Develop/OI/P1736.cpp -o CMakeFiles/OI.dir/P1736.cpp.s
+CMakeFiles/OI.dir/poj1830.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OI.dir/poj1830.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dhy/Develop/OI/poj1830.cpp -o CMakeFiles/OI.dir/poj1830.cpp.s
 
 # Object files for target OI
 OI_OBJECTS = \
-"CMakeFiles/OI.dir/P1736.cpp.o"
+"CMakeFiles/OI.dir/poj1830.cpp.o"
 
 # External object files for target OI
 OI_EXTERNAL_OBJECTS =
 
-OI: CMakeFiles/OI.dir/P1736.cpp.o
+OI: CMakeFiles/OI.dir/poj1830.cpp.o
 OI: CMakeFiles/OI.dir/build.make
 OI: CMakeFiles/OI.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/dhy/Develop/OI/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable OI"

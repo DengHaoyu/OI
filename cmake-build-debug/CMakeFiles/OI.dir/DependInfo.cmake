@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/dhy/Develop/OI/P1736.cpp" "/home/dhy/Develop/OI/cmake-build-debug/CMakeFiles/OI.dir/P1736.cpp.o"
+  "/home/dhy/Develop/OI/poj1830.cpp" "/home/dhy/Develop/OI/cmake-build-debug/CMakeFiles/OI.dir/poj1830.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
